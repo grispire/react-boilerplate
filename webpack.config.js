@@ -29,6 +29,23 @@ module.exports = {
         test: /\.(gif|png|jpe?g|svg)$/i,
         loaders: ['file-loader?hash=sha512&digest=hex&name=[hash].[ext]', 'image-webpack-loader'],
       },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: ['absolute/path/a', 'absolute/path/b'],
+            },
+          },
+        ],
+      },
     ],
   },
   devServer: {

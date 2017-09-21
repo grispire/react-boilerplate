@@ -34,6 +34,8 @@
     "eslint-config-prettier": "^2.5.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.3.0"
+    "eslint-plugin-react": "^7.3.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
   }
 }
